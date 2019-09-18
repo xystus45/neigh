@@ -1,1 +1,1 @@
-web: gunicorn xystus10.wsgi --log-file -
+web: gunicorn hood.wsgi --log-file -
