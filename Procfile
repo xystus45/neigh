@@ -1,0 +1,1 @@
+web: gunicorn xystus10.wsgi --log-file -
