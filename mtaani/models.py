@@ -50,9 +50,6 @@ class UserProfile(models.Model):
         if created:
             UserProfile.objects.create(user=instance)
 
-    # @receiver(post_save, sender=User)
-    # def save_user_profile(sender, instance, **kwargs):
-    #     instance.user_profile.save()
 
     def __str__(self):
         return self.user.username
