@@ -26,7 +26,7 @@ SECRET_KEY = 'fag^o)w7had0nwu2(cy&r%82ymspq*=0$qg26n(b40)s7lw$y-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.localhost','.herokuapp.com','.127.0.0.1']
 
 
 # Application definition
@@ -85,7 +85,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME':'hood',
+        'USER':'xystus',
         'PASSWORD':111,
+        'HOST': '127.0.0.1',
+        'PORT': '',
     }
 }
 
